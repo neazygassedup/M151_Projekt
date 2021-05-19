@@ -1,0 +1,36 @@
+networks:
+  db:
+    driver: bridge
+services:
+  db:
+    container_name: mssql_server
+    environment:
+      ACCEPT_EULA: "Y"
+      MSSQL_PID: Express
+      SA_PASSWORD: Your_password123
+    image: mcr.microsoft.com/mssql/server:2017-latest-ubuntu
+    networks:
+      db: {}
+    ports:
+    - published: 1435
+      target: 1435
+  m151_eisstand:
+    build:
+      context: C:\Users\eltai\OneDrive\Dokumente\Schule\7. Semester\M151\Projekt\M151_Eisstand
+      dockerfile: M151_Eisstand/Dockerfile
+    depends_on:
+      db:
+        condition: service_started
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_URLS: https://+:443;http://+:80
+    image: m151eisstand
+    networks:
+      db: {}
+    ports:
+    - target: 80
+    - target: 443
+    volumes:
+    - C:\Users\eltai\AppData\Roaming\ASP.NET\Https:/root/.aspnet/https:ro
+    - C:\Users\eltai\AppData\Roaming\Microsoft\UserSecrets:/root/.microsoft/usersecrets:ro
+version: '3.4'

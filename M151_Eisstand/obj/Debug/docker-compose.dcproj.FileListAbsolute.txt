@@ -1,0 +1,15 @@
+C:\Users\eltai\OneDrive\Dokumente\Schule\7. Semester\M151\Projekt\M151_Eisstand\bin\Debug\M151_Eisstand.deps.json
+C:\Users\eltai\OneDrive\Dokumente\Schule\7. Semester\M151\Projekt\M151_Eisstand\bin\Debug\M151_Eisstand.runtimeconfig.json
+C:\Users\eltai\OneDrive\Dokumente\Schule\7. Semester\M151\Projekt\M151_Eisstand\bin\Debug\M151_Eisstand.runtimeconfig.dev.json
+C:\Users\eltai\OneDrive\Dokumente\Schule\7. Semester\M151\Projekt\M151_Eisstand\bin\Debug\appsettings.Development.json
+C:\Users\eltai\OneDrive\Dokumente\Schule\7. Semester\M151\Projekt\M151_Eisstand\bin\Debug\appsettings.json
+C:\Users\eltai\OneDrive\Dokumente\Schule\7. Semester\M151\Projekt\M151_Eisstand\bin\Debug\M151_Eisstand.exe
+C:\Users\eltai\OneDrive\Dokumente\Schule\7. Semester\M151\Projekt\M151_Eisstand\bin\Debug\M151_Eisstand.dll
+C:\Users\eltai\OneDrive\Dokumente\Schule\7. Semester\M151\Projekt\M151_Eisstand\bin\Debug\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\eltai\OneDrive\Dokumente\Schule\7. Semester\M151\Projekt\M151_Eisstand\bin\Debug\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\eltai\OneDrive\Dokumente\Schule\7. Semester\M151\Projekt\M151_Eisstand\bin\Debug\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\eltai\OneDrive\Dokumente\Schule\7. Semester\M151\Projekt\M151_Eisstand\bin\Debug\Microsoft.OpenApi.dll
+C:\Users\eltai\OneDrive\Dokumente\Schule\7. Semester\M151\Projekt\M151_Eisstand\bin\Debug\M151_Eisstand.pdb
+C:\Users\eltai\OneDrive\Dokumente\Schule\7. Semester\M151\Projekt\M151_Eisstand\obj\Debug\docker-compose.dcprojAssemblyReference.cache
+C:\Users\eltai\OneDrive\Dokumente\Schule\7. Semester\M151\Projekt\M151_Eisstand\obj\Debug\docker-compose.dcproj.CoreCompileInputs.cache
+C:\Users\eltai\OneDrive\Dokumente\Schule\7. Semester\M151\Projekt\M151_Eisstand\obj\Debug\docker-compose.dcproj.CopyComplete

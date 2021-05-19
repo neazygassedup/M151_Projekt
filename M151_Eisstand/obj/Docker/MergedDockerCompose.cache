@@ -1,0 +1,16 @@
+services:
+  m151_eisstand:
+    build:
+      context: C:\Users\eltai\OneDrive\Dokumente\Schule\7. Semester\M151\Projekt\M151_Eisstand
+      dockerfile: M151_Eisstand/Dockerfile
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_URLS: https://+:443;http://+:80
+    image: m151eisstand
+    ports:
+    - target: 80
+    - target: 443
+    volumes:
+    - C:\Users\eltai\AppData\Roaming\ASP.NET\Https:/root/.aspnet/https:ro
+    - C:\Users\eltai\AppData\Roaming\Microsoft\UserSecrets:/root/.microsoft/usersecrets:ro
+version: '3.4'
