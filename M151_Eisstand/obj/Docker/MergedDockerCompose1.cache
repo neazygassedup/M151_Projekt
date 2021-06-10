@@ -1,4 +1,19 @@
+networks:
+  db:
+    driver: bridge
 services:
+  db:
+    container_name: mssql_server
+    environment:
+      ACCEPT_EULA: "Y"
+      MSSQL_PID: Express
+      SA_PASSWORD: Your_password123
+    image: mcr.microsoft.com/mssql/server:2017-latest-ubuntu
+    networks:
+      db: {}
+    ports:
+    - published: 1435
+      target: 1435
   m151_eisstand:
     build:
       context: C:\Users\eltai\OneDrive\Dokumente\Schule\7. Semester\M151\Projekt\M151_Eisstand
@@ -8,6 +23,9 @@ services:
         com.microsoft.visual-studio.project-name: M151_Eisstand
       target: base
     container_name: M151_Eisstand
+    depends_on:
+      db:
+        condition: service_started
     entrypoint: tail -f /dev/null
     environment:
       ASPNETCORE_ENVIRONMENT: Development
@@ -23,6 +41,8 @@ services:
         dotnet); then kill $$PID; fi"
       com.microsoft.visualstudio.debuggee.program: dotnet
       com.microsoft.visualstudio.debuggee.workingdirectory: /app
+    networks:
+      db: {}
     ports:
     - target: 80
     - target: 443
